@@ -1,0 +1,83 @@
+.header .jumbotron{
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+.middle .jumbotron{
+    background-color: grey;
+    color: white;
+    text-align: left;
+}
+.footer.jumbotron{
+    background-color: salmon;
+    color: white;
+    text-align: left;
+}
+
+.border{
+    border: 20px solid green;
+    color:green;
+}
+.navbar-brand{
+    width: 120px; 
+    height: 110px;
+}
+
+.navBar ul li{
+    padding-top: 55px;
+    padding-bottom: 0px;
+}
+.navRight{
+    padding-top: 55px;
+    padding-bottom: 0px;
+}
+.dropdown {
+    padding-top: 55px;
+    padding-bottom: 0px;
+}
+
+.nav > li.dropdown.open {
+    position: static;
+}
+.nav > li.dropdown.open .dropdown-menu {
+    display:table; width: 100%; text-align: left;  right:0;
+}
+
+.dropdown-menu>li {
+    display: list-item;
+    list-style: none;
+}
+
+.button{
+    display: inline;
+}
+
+.body{
+    border: 10px solid white;
+    padding-left: 5px;
+    margin-top:  -120px;
+    
+}
+
+.img{
+    width: 550px;
+    height:350px;
+}
+
+.authform{
+    margin: 0 auto;
+    width: 30%;
+}
+
+.thumbnail{
+    height:500px;
+}
+.wholePage{
+    border:10px solid white;
+}
+
+.readMore{
+    border:none;
+    margin-left: 0 auto;
+    
+}
