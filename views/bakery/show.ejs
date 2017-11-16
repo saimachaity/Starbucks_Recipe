@@ -9,10 +9,12 @@
                         <h1><%= bakery.Title %></h1>
                         <p><strong>Ingredients:</strong><br><%- bakery.Description %></p>
                         <span><strong><%= bakery.created.toDateString() %></strong></span>
+                        <% if(currentUser && bakery.Author.id.equals(currentUser._id)){%>
                         <button class="btn btn-xs btn-success" ><a class="button" href= "/bakery/<%= bakery._id%>/edit">Edit</a></button> 
                         <form class="button" action= "/bakery/<%= bakery._id%>?_method=DELETE" method="POST">
                             <input type="submit" class="btn btn-xs btn-danger" value="Delete Post">
                         </form>
+                        <% } %>
                     <div>
                  </td>
             </tr>

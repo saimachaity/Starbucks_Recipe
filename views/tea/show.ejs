@@ -10,10 +10,12 @@
                         <h1><%= tea.Title %></h1>
                         <p><strong>Ingredient:</strong><br><%- tea.Description %></p>
                         <span><strong><%= tea.created.toDateString() %></strong></span>
+                        <% if(currentUser && tea.Author.id.equals(currentUser._id)){%>
                         <button class="btn btn-xs btn-success"><a class="button" href="/tea/<%=tea.id%>/edit">Edit</a></button> 
                         <form class="button" action="/tea/<%=tea.id%>?_method=DELETE" method="POST">
                             <input type="submit" class="btn btn-xs btn-danger" value="Delete Post">
                         </form>
+                        <% } %>
                     </div>
                 </td>
             </tr>

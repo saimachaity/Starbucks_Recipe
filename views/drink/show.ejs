@@ -9,10 +9,12 @@
                         <h1><%= drink.Title %></h1>
                         <p><strong>Ingredient:</strong><br><%-drink.Description %></p>
                         <span><strong><%= drink.created.toDateString() %></strong></span>
+                        <% if(currentUser && drink.Author.id.equals(currentUser._id)){%>
                         <button class="btn btn-xs btn-success"><a class="button" href="/drink/<%=drink.id%>/edit">Edit</a></button> 
                         <form class="button" action="/drink/<%=drink.id%>?_method=DELETE" method="POST">
                             <input type="submit" class="btn btn-xs btn-danger" value="Delete Post">
                         </form>
+                        <% } %>
                     </div>
                 </td>
             </tr>
