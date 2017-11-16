@@ -1,7 +1,6 @@
 var express= require("express");
 var router = express.Router();
 var coffee = require("../models/coffee");
-var drink = require("../models/drink");
 var middleware = require("../middleware");
 
 //get route
